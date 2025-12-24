@@ -5,6 +5,16 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nguyễn Vĩnh Lộc"
+        android:textColor="@color/text_title"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:background="#8DD536"/>
+
+    <TextView
         android:id="@+id/tvTitle"
         android:text="Phiếu xuất"
         android:textStyle="bold"

@@ -5,8 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Võ Tân Khoa"
+        android:textColor="@color/text_title"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:background="#8DD536"/>
+
     <EditText
         android:id="@+id/edtSearchProduct"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="10dp"
         android:hint="Tìm theo tên / mã sản phẩm..."
         android:padding="12dp"
         android:background="@android:drawable/edit_text"
@@ -18,8 +31,7 @@
         android:layout_below="@id/edtSearchProduct"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="70dp"/>
+        android:layout_height="match_parent"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabAddProduct"
