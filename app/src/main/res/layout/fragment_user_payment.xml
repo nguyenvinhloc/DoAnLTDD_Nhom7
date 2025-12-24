@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="14dp"
+    android:background="@color/green_50"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Thanh toán"
+        app:titleTextColor="@color/text_title"
+        app:menu="@menu/menu_logout"
+        android:background="@color/green_50" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/stroke_light"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnPickCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Chọn khách hàng"
+                android:backgroundTint="#E8F5E9"
+                android:textColor="@color/green_700" />
+
+            <TextView
+                android:id="@+id/tvPickedCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Chưa chọn khách"
+                android:textColor="@color/text_sub" />
+
+            <TextView
+                android:id="@+id/tvHintDebt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Chọn khách để xem công nợ hiện tại"
+                android:textColor="@color/text_sub" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/stroke_light" />
+
+            <EditText
+                android:id="@+id/edtAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Số tiền thanh toán (đ)"
+                android:inputType="number"
+                android:padding="10dp"
+                android:background="@android:drawable/edit_text" />
+
+            <EditText
+                android:id="@+id/edtNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Ghi chú (tuỳ chọn)"
+                android:inputType="text"
+                android:padding="10dp"
+                android:background="@android:drawable/edit_text" />
+
+            <Button
+                android:id="@+id/btnPay"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="12dp"
+                android:text="Xác nhận thanh toán"
+                android:textStyle="bold"
+                android:backgroundTint="@color/green_600"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

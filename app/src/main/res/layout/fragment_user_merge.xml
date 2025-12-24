@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="14dp"
+    android:background="@color/green_50"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Gộp đơn cho khách"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnPickCustomer"
+        android:text="Chọn khách hàng"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:backgroundTint="#E8F5E9"
+        android:textColor="@color/green_700"/>
+
+    <TextView
+        android:id="@+id/tvPickedCustomer"
+        android:text="Chưa chọn khách"
+        android:textColor="@color/text_sub"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvInvoices"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnMerge"
+        android:text="Gộp các đơn đã chọn"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:backgroundTint="@color/green_600"
+        android:textColor="@color/white"/>
+</LinearLayout>

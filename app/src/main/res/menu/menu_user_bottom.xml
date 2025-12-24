@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_in" android:title="Nhập" android:icon="@android:drawable/ic_input_add"/>
+    <item android:id="@+id/nav_out" android:title="Xuất" android:icon="@android:drawable/ic_menu_share"/>
+    <item android:id="@+id/nav_pay" android:title="Thanh toán" android:icon="@android:drawable/ic_menu_send"/>
+    <item android:id="@+id/nav_debt" android:title="Công nợ" android:icon="@android:drawable/ic_menu_info_details"/>
+    <item android:id="@+id/nav_merge" android:title="Gộp đơn" android:icon="@android:drawable/ic_menu_agenda"/>
+</menu>

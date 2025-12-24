@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="14dp"
+    android:background="@color/green_50"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarExport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_50"
+        app:title="@string/title_export"
+        app:titleTextColor="@color/text_title"
+        app:menu="@menu/menu_user_export" />
+
+    <Button
+        android:id="@+id/btnOpenOutList"
+        android:text="@string/open_out_list"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:backgroundTint="#E8F5E9"
+        android:textColor="@color/green_700" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:strokeColor="@color/stroke_light"
+        app:strokeWidth="1dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnPickCustomer"
+                android:text="@string/pick_customer"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:backgroundTint="#E8F5E9"
+                android:textColor="@color/green_700"/>
+
+            <TextView
+                android:id="@+id/tvPickedCustomer"
+                android:text="@string/not_picked_customer"
+                android:textColor="@color/text_sub"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/stroke_light"/>
+
+            <Button
+                android:id="@+id/btnPickProduct"
+                android:text="@string/pick_product"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:backgroundTint="#E8F5E9"
+                android:textColor="@color/green_700"/>
+
+            <TextView
+                android:id="@+id/tvPickedProduct"
+                android:text="@string/not_picked_product"
+                android:textColor="@color/text_sub"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/edtQty"
+                android:hint="@string/qty"
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:background="@android:drawable/edit_text"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnAddLine"
+                android:text="@string/add_line"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/green_600"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:text="@string/total_0"
+        android:textStyle="bold"
+        android:textColor="@color/green_700"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvLines"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:text="@string/save_out_invoice"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:backgroundTint="@color/green_600"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

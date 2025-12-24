@@ -1,0 +1,15 @@
+<resources>
+    <string name="title_export">Xuất hàng</string>
+    <string name="open_out_list">Danh sách phiếu xuất</string>
+    <string name="pick_customer">Chọn khách hàng</string>
+    <string name="pick_product">Chọn sản phẩm</string>
+    <string name="not_picked_customer">Chưa chọn khách</string>
+    <string name="not_picked_product">Chưa chọn sản phẩm</string>
+    <string name="qty">Số lượng</string>
+    <string name="add_line">Thêm vào danh sách</string>
+    <string name="total_0">Tổng: 0 đ</string>
+    <string name="save_out_invoice">Lưu phiếu xuất</string>
+    <string name="remove_line">Xóa dòng</string>
+    <string name="logout">Đăng xuất</string>
+
+</resources>
